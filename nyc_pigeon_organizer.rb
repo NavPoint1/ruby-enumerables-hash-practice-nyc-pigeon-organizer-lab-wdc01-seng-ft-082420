@@ -3,6 +3,7 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   # write your code here!
   
+<<<<<<< HEAD
   new_hash = {}
   names = []
   
@@ -30,4 +31,14 @@ def nyc_pigeon_organizer(data)
     new_hash[name] = key_hash
   }
   new_hash
+=======
+  data.each { |key, value|
+    value.each { |k, v|
+      v.map { |name|
+        binding.pry
+      }
+    }
+  }
+  
+>>>>>>> ff1be6b6e44d87324af8d67dac2afb3224423566
 end
